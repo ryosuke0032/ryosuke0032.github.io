@@ -4,12 +4,108 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+    body{
+    background-color: #ddd;
+    font-size: 14px;
+    font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+      .img-responsive-overwrite{
+        margin: 0 auto;
+      }
+      
+      .name{
+        margin-top: -100px;
+        margin-bottom: 30px;
+        color :#fff;
+        letter-spacing:0.15em;
+        text-shadow: 1px 1px 0px #000;
+      }
+      
+      .panel-heading{
+        margin:-40px 0 -30px 0;
+      }
+      
+      #works{
+          margin-top:15px;
+          displ:inline-block;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <header>
+     <div class="container">
+      <div class="text-center">
+       <img src="guitar.jpg" width="800" height="600" alt="" class="img-responsive img-responsive-overwrite">
+       <div class="name">
+        <h1>ryosuke0032</h1>
+       </div>
+      </div>
+     </div>
+    </header>
+    <div class="container-fluid text-center">
+    <h2>ABOUT</h2>
+    <div class="col-md-12">
+    　<div class="panel panel-default">
+    　 <div class="panel-heading">
+    　 <h3 class="panel-title">Profile</h3>
+    　   </div>
+    　 <div class="panel-body">
+        <strong>ryosuke0032</strong>&nbsp;&nbsp;
+        <a href="https://github.com/ryosuke0032">github</a><br />
+        商社勤務/横浜在住/1986生まれ<br />
+        趣味：ギター、ドラム、読書、美味しい店探索、映画、<a href="http://ryosuke0032.info/">blog</a><br />
+        <div class="text-left">
+        東京の大学を卒業後、機械メーカーに就職。その後５年間勤務し、商社に転職。
+        ある出張の帰り道”こんなwebサービスないかな"と検索したところ一向に見つからず、
+        それなら自分で作ってみようとプログラミングの勉強を開始。独学で休み休み勉強すること２年。
+        自分一人でも開発に限界を感じた為、ブートキャンプでメンターをつけてもらうことに。早くwebサービス始めたい。</div>
+      </div>
+      </div>
+      </div>
+      <br />
+    <div id="works" class="col-sm-12">
+      <div class="panel panel-default">
+    　  <div class="panel-heading">
+    　     <h3 class="panel-title">Works</h3>
+    　  </div>
+    　  <div class="panel-body">
+    　   <div class="col-sm-3"> 
+         メッセージボード<br />
+         <img src="messageboard.jpg" height="600" alt="" class="img-responsive img-responsive-overwrite">
+         簡単なメッセージを残せるサービスです。
+         </div>
+         <div class="col-sm-3"> 
+         Twitterクローン<br />
+         <img src="twitter.png" height="600" alt="" class="img-responsive img-responsive-overwrite">
+         Twitterの様なサービスです。
+         </div>
+         <div class="col-sm-3"> 
+         モノリスト<br />
+         <img src="buy.jpg" height="600" alt="" class="img-responsive img-responsive-overwrite">
+         欲しいものを選べるサービスです。
+         </div>
+         <div class="col-sm-3"> 
+        オリジナルサービス<br />
+        <img src="guitar.jpg" height="600" alt="" class="img-responsive img-responsive-overwrite">
+        近日開発予定。
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
   </body>
 </html>
